@@ -12,6 +12,11 @@
     @include Responsive(LG){
         padding-top: 40px;
     }
+    .navbar-brand img{
+        @include Responsive(XS){
+            width: 50%;
+        }
+    }
     .main-nav{
         transition: all 0.5s;
         @include Responsive(LG){
@@ -298,5 +303,6 @@
                 }
             }
         }
+        
     }
 }
