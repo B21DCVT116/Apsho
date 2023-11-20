@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Open+Sans:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap');
+@import "variable";
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.active{
+    color:$color--main;
+}
+h1,h2,h3,h4,h5,h6{
+    color: $color--title;
+    letter-spacing: 0.5px;
+}
