@@ -111,15 +111,13 @@
             font-weight: 400;
         }
         &__buttons{
-            & li{
-                display: inline-block;
-            }
-            & li:first-child{
-                margin-right: 15px;
+            .col-sm-6{
+                padding: 8px;
             }
             &__install{
                 padding: 15px 30px;
                 @include flexbox;
+                justify-content: center;
                 border: 2px solid $color--title;
                 outline: none;
                 border-radius: 10px;
@@ -289,12 +287,15 @@
             i{
                 font-size: 40px;
                 margin-right: 10px;
-                font-weight: 100;
                 color: $color--main;
             }
             p{
                 margin-bottom: 0;
                 color: $color--title;
+                font-weight: 500;
+                @include Responsive(XS){
+                    font-size: 13px;
+                }
             }
         }
     }

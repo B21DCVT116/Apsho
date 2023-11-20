@@ -114,11 +114,8 @@
   line-height: 37px;
   font-weight: 400;
 }
-.hero__content__buttons li {
-  display: inline-block;
-}
-.hero__content__buttons li:first-child {
-  margin-right: 15px;
+.hero__content__buttons .col-sm-6 {
+  padding: 8px;
 }
 .hero__content__buttons__install {
   padding: 15px 30px;
@@ -127,6 +124,7 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  justify-content: center;
   border: 2px solid #273437;
   outline: none;
   border-radius: 10px;
@@ -298,12 +296,17 @@
 .feature__content__list i {
   font-size: 40px;
   margin-right: 10px;
-  font-weight: 100;
   color: #FF4D6B;
 }
 .feature__content__list p {
   margin-bottom: 0;
   color: #273437;
+  font-weight: 500;
+}
+@media only screen and (max-width: 480px) {
+  .feature__content__list p {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
