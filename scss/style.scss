@@ -11,13 +11,15 @@
     transition: all 0.5s;
     @include Responsive(LG){
         padding-top: 40px;
+        padding-right: 25px;
+        padding-left: 25px;
     }
     .main-nav{
         transition: all 0.5s;
         @include Responsive(LG){
             background-color: #fff;
             border-radius: 10px;
-            padding: 20px 30px;
+            padding: 20px 28px;
             box-shadow: 0 0 12px 0 rgba(0,0,0,0.08);
         }
     }
