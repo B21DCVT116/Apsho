@@ -113,13 +113,22 @@
             font-weight: 400;
         }
         &__buttons{
-            .col-sm-6{
-                padding: 8px;
+            // .col-sm-6{
+            //     padding: 8px;
+            // }
+            @include flexbox;
+            @include justify-content(flex-start);
+            @include Responsive(LG){
+                @include justify-content(center);
+            }
+            @include Responsive(SM){
+                display: inline-block;
+                width: 100%;
             }
             &__install{
                 padding: 15px 30px;
                 @include flexbox;
-                justify-content: center;
+                @include justify-content(center);
                 border: 2px solid $color--title;
                 outline: none;
                 border-radius: 10px;
@@ -136,6 +145,13 @@
                 }
                 & i{
                     font-size: 40px;
+                }
+            }
+            &__install:first-child{
+                margin-right: 15px;
+                @include Responsive(SM){
+                    margin-right: 0px;
+                    margin-bottom: 15px;
                 }
             }
             .btn__platform{

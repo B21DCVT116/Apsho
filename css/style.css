@@ -116,8 +116,32 @@
   line-height: 37px;
   font-weight: 400;
 }
-.hero__content__buttons .col-sm-6 {
-  padding: 8px;
+.hero__content__buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 992px) {
+  .hero__content__buttons {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero__content__buttons {
+    display: inline-block;
+    width: 100%;
+  }
 }
 .hero__content__buttons__install {
   padding: 15px 30px;
@@ -126,6 +150,10 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   border: 2px solid #273437;
   outline: none;
@@ -144,6 +172,15 @@
 }
 .hero__content__buttons__install i {
   font-size: 40px;
+}
+.hero__content__buttons__install:first-child {
+  margin-right: 15px;
+}
+@media only screen and (max-width: 576px) {
+  .hero__content__buttons__install:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
 }
 .hero__content__buttons .btn__platform {
   margin-left: 15px;
