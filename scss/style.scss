@@ -113,9 +113,6 @@
             font-weight: 400;
         }
         &__buttons{
-            // .col-sm-6{
-            //     padding: 8px;
-            // }
             @include flexbox;
             @include justify-content(flex-start);
             @include Responsive(LG){
@@ -189,6 +186,7 @@
     &__title h2{
         font-weight: 700;
         font-size: 45px;
+        margin-bottom: 25px;
     }
     &__item{
         height: 320.4px;
@@ -318,5 +316,40 @@
             }
         }
         
+    }
+}
+
+.faq{
+    padding: 100px 0;
+    &__content{
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 55px;
+        }
+        p{
+            color: $color--desc;
+            margin-bottom: 16px;
+            line-height: 26px;
+        }
+    }
+    &__accordion{
+        &__item{
+            margin-bottom: 25px;
+            padding: 20px 30px;
+            box-shadow: 0 0 12px 0 rgba(0,0,0,0.05);
+            border-radius: 8px;
+            &__btn{
+                display: block;
+                background-color: #fff;
+                text-align: start;
+                position: relative;
+                color: $color--title;
+                font-weight: 600;
+                font-size: 16px;
+
+            }
+        }
     }
 }

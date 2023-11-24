@@ -217,6 +217,7 @@
 .service__title h2 {
   font-weight: 700;
   font-size: 45px;
+  margin-bottom: 25px;
 }
 .service__item {
   height: 320.4px;
@@ -347,6 +348,36 @@
   .feature__content__list p {
     font-size: 13px;
   }
+}
+
+.faq {
+  padding: 100px 0;
+}
+.faq__content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 55px;
+}
+.faq__content p {
+  color: #8c8c94;
+  margin-bottom: 16px;
+  line-height: 26px;
+}
+.faq__accordion__item {
+  margin-bottom: 25px;
+  padding: 20px 30px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.faq__accordion__item__btn {
+  display: block;
+  background-color: #fff;
+  text-align: start;
+  position: relative;
+  color: #273437;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
