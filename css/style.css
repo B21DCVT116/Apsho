@@ -305,6 +305,16 @@
   right: -13%;
   z-index: -1;
 }
+@media only screen and (max-width: 992px) {
+  .feature-shape-03 {
+    right: -13% !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .feature-shape-02 {
+    right: 10% !important;
+  }
+}
 .feature__content {
   margin-left: 25px;
 }

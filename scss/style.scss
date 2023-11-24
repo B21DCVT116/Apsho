@@ -276,6 +276,16 @@
             z-index: -1;
         }
     }
+    &-shape-03{
+        @include Responsive(LG){
+            right: -13%!important;
+        }
+    }
+    &-shape-02{
+        @include Responsive(LG){
+            right: 10%!important;
+        }
+    }
     &__content{
         margin-left: 25px;
         h2{
